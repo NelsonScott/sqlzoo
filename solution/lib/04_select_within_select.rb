@@ -115,13 +115,8 @@ def population_constraint
   SQL
 end
 
-# To get a well rounded view of the important features of SQL you should move
-# on to the next tutorial concerning aggregates.
-
-# To gain an absurdly detailed view of one insignificant feature of the
-# language, read on.
-
-# We can use the word ALL to allow >= or > or < or <=to act over a list.
+# BONUS QUESTIONS: These problems require knowledge of subqueries and aggregate
+# functions. Attempt them after completing sections 04 and 05.
 
 def highest_gdp
   # Which countries have a GDP greater than every country in Europe? (Give the
@@ -166,9 +161,6 @@ def largest_in_continent
       );
   SQL
 end
-
-# BONUS QUESTIONS: these are difficult questions that utilize techniques not
-# covered in prior sections:
 
 def sparse_continents
   # Find each country that belongs to a continent where all populations are
