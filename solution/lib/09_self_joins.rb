@@ -93,8 +93,8 @@ def cl_to_lr
   # WHERE
   #   a.stop = 53
   #
-  # Observe that b.stop gives all the places # you can get to from
-  # Craiglockhart, without changing routes. Change the # query so that it
+  # Observe that b.stop gives all the places you can get to from
+  # Craiglockhart, without changing routes. Change the query so that it
   # shows the services from Craiglockhart to London Road.
   execute(<<-SQL)
     SELECT
@@ -147,8 +147,8 @@ def cl_to_lr_by_name
 end
 
 def haymarket_and_leith
-  # Give a list of all the services which connect stops 115 and 137
-  # ('Haymarket' and 'Leith')
+  # Give the company and num of the services that connect stops
+  # 115 and 137 ('Haymarket' and 'Leith')
   execute(<<-SQL)
     SELECT
       DISTINCT r1.company, r1.num
@@ -176,8 +176,8 @@ def haymarket_and_leith
 end
 
 def craiglockhart_and_tollcross
-  # Give a list of the services which connect the stops 'Craiglockhart' and
-  # 'Tollcross'
+  # Give the company and num of the services that connect stops
+  # 'Craiglockhart' and 'Tollcross'
   execute(<<-SQL)
     SELECT
       r1.company, r1.num
@@ -204,9 +204,9 @@ def craiglockhart_and_tollcross
 end
 
 def start_at_craiglockhart
-  # Give a distinct list of the stops which may be reached from 'Craiglockhart'
-  # by taking one bus, including 'Craiglockhart' itself. Include the company
-  # and bus no. of the relevant services.
+  # Give a distinct list of the stops that can be reached from 'Craiglockhart'
+  # by taking one bus, including 'Craiglockhart' itself. Include the stop name,
+  # as well as the company and bus no. of the relevant service.
   execute(<<-SQL)
     SELECT
       end_route_stops.name,

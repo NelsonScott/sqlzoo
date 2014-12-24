@@ -132,9 +132,9 @@ def highest_gdp
     FROM
       world
     WHERE
-      world.gdp > (
+      world.gdp > ALL(
         SELECT
-          MAX(w2.gdp)
+          w2.gdp
         FROM
           world w2
         WHERE
