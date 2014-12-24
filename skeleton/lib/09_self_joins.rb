@@ -40,7 +40,7 @@ def connecting_routes
   # FROM
   #   route
   # WHERE
-  #   stop=149 OR stop=53
+  #   stop = 149 OR stop = 53
   # GROUP BY
   #   company, num
   #
@@ -90,8 +90,7 @@ def cl_to_lr_by_name
   # The query shown is similar to the previous one, however by joining two
   # copies of the stops table we can refer to stops by name rather than by
   # number. Change the query so that the services between 'Craiglockhart' and
-  # 'London Road' are shown. If you are tired of these places try
-  # 'Fairmilehead' against 'Tollcross'
+  # 'London Road' are shown.
   execute(<<-SQL)
   SQL
 end
