@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: nobels 
+# Table name: nobels
 #
 #  yr          :integer
 #  subject     :string
@@ -13,7 +13,7 @@ def example_select
     SELECT
       yr, subject, winner
     FROM
-      nobels 
+      nobels
     WHERE
       yr = 1960
   SQL

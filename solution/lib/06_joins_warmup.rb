@@ -12,12 +12,12 @@
 #  yr          :integer
 #  score       :float
 #  votes       :integer
-#  director_id    :integer
+#  director_id :integer
 #
 # Table name: castings
 #
-#  movie_id     :integer      not null, primary key
-#  actor_id     :integer      not null, primary key
+#  movie_id    :integer      not null, primary key
+#  actor_id    :integer      not null, primary key
 #  ord         :integer
 
 require_relative './sqlzoo.rb'

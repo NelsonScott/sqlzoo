@@ -10,7 +10,7 @@
 #  num         :string       not null, primary key
 #  company     :string       not null, primary key
 #  pos         :integer      not null, primary key
-#  stop_id      :integer
+#  stop_id     :integer
 
 require_relative './sqlzoo.rb'
 
