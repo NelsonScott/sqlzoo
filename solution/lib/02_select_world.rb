@@ -43,7 +43,7 @@ def high_population_gdps
     FROM
       countries
     WHERE
-      population > 200000000;
+      population >= 200000000;
   SQL
 end
 
